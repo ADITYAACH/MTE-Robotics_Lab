@@ -1,3 +1,5 @@
+# ros2 run urdf_tutorial controller_ik --ros-args -p end_params:=[0.5,0.5,1.57]
+
 import rclpy
 from rclpy.node import Node
 from builtin_interfaces.msg import Duration

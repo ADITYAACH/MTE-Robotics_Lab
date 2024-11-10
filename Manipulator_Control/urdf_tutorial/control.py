@@ -2,7 +2,6 @@
 
 #ros2 run urdf_tutorial control --ros-args -p joint_angles:=[0.5,1.5,-1.2]
 
-
 import rclpy
 from rclpy.node import Node
 from builtin_interfaces.msg import Duration

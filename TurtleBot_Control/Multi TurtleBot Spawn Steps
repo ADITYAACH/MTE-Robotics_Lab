@@ -1,1 +1,9 @@
+sudo apt install ros-humble-turtlesim
+ros2 pkg executables turtlesim
 
+ros2 run turtlesim turtlesim_node (TERMINAL 1)
+ros2 run turtlesim turtle_teleop_key (TERMINAL 2)
+
+rqt (TERMINAL 3)  [Serives ---> Service Caller] and change the coordinates. Name it "turtle2"
+
+ros2 run turtlesim turtle_teleop_key --ros-args --remap turtle1/cmd_vel:=turtle2/cmd_vel (TERMINAL 4)
